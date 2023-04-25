@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane fx:controller="Controllers.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane>
+         <left>
+            <VBox prefHeight="421.0" prefWidth="214.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="bookListBtn"  mnemonicParsing="false" onAction="#loadBookList" prefHeight="138.0" prefWidth="214.0" text="Book List" />
+                  <Button fx:id="memberListBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadMemberList" prefHeight="136.0" prefWidth="214.0" text="Member List" />
+                  <Button fx:id="issueListBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadIssueList" prefHeight="136.0" prefWidth="214.0" text="Issue List" />
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="409.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="bookBtn" mnemonicParsing="false" onAction="#loadBook" prefHeight="138.0" prefWidth="203.0" text="Books Management" />
+                  <Button fx:id="memberBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadMembers" prefHeight="138.0" prefWidth="203.0" text="Members Management" />
+                  <Button fx:id="issueBtn" layoutX="10.0" layoutY="148.0" mnemonicParsing="false" onAction="#loadIssue" prefHeight="138.0" prefWidth="203.0" text="Issue Management" />
+               </children>
+            </VBox>
+         </right>
+         <top>
+            <MenuBar fx:id="closeMenu" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Close">
+                  <items>
+                    <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Close" onAction="#close" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="&#10;&#10;&#10;&#10;  Welcome To The Library System&#10;&#10;&#10;" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </TextArea>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

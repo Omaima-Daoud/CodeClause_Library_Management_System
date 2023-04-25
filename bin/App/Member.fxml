@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="Controllers.MemberController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="342.0" prefWidth="856.0" AnchorPane.bottomAnchor="286.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="id" promptText="Member ID">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="name" layoutX="20.0" layoutY="30.0" promptText="Member Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="email" layoutX="10.0" layoutY="61.0" promptText="Member Email">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="phone" layoutX="10.0" layoutY="61.0" promptText="Member Phone Number">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="savebtn" mnemonicParsing="false" onAction="#addMember" prefHeight="0.0" prefWidth="380.0"  text="Save">
+                     <HBox.margin>
+                        <Insets bottom="40.0" left="40.0" right="40.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="deletebtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#deleteMember" prefHeight="100.0" prefWidth="420.0" text="Delete">
+                     <HBox.margin>
+                        <Insets bottom="40.0" left="40.0" right="40.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="cancelbtn" layoutX="35.0" layoutY="10.0" mnemonicParsing="false" onAction="#cancel" prefHeight="0.0" prefWidth="380.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets bottom="40.0" left="40.0" right="40.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="45.0" right="45.0" top="45.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
